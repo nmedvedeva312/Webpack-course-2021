@@ -5,7 +5,7 @@ class Post {
 	}
 
 	toString() {
-		return SON.stringify({
+		return JSON.stringify({
 			title: this.title,
 			date: this.date.toJSON()
 		})
